@@ -2,7 +2,7 @@
 
 char valorRecibido;
 SoftwareSerial blue(0,1);
-int relevador = 13;
+int relevador = 8;
 
 void setup()
 {
@@ -20,14 +20,14 @@ void loop()
     {
       case '0':
         digitalWrite(relevador,LOW);
-        blue.println("Luz apagada");
+        blue.println("Luz encendida");
         break;
       case '1':
         digitalWrite(relevador,HIGH);
-        blue.println("Luz encendida");
+        blue.println("Luz apagada");
         break;
       default:
-        blue.print(rec);
+        blue.print(valorRecibido);
         blue.println(" no es una orden valida. Introduzca 0 o 1");
     }
   }
