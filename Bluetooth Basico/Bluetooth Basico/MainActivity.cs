@@ -20,6 +20,7 @@ namespace Bluetooth_Basico
         private static Stream inStream = null;
         private static Stream outStream = null;
         bool isLightOn = false;
+
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -57,6 +58,8 @@ namespace Bluetooth_Basico
             WriteData(finalValue);
         }
 
+        //este método no está incluido porque solo se trata de un dispositivo y ya de hecho conocido
+        //lo incluí para futuras consideraciones o escenarios más complejos.
         private void CheckBluetoothDevice()
         {
             mBluetoothAdapter = BluetoothAdapter.DefaultAdapter;
@@ -119,6 +122,7 @@ namespace Bluetooth_Basico
                         bytes = inStream.Read(buffer, 0, buffer.Length);
                         if (bytes > 0)
                         {
+                            //aquí recibirías la información enviada por el serial Bluetooth
                             //RunOnUiThread(() => {
                             //    string valor = System.Text.Encoding.ASCII.GetString(buffer);
                             //    Result.Text = Result.Text + "\n" + valor;

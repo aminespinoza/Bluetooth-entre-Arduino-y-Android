@@ -1,4 +1,0 @@
-Bluetooth_Basico.MainActivity, Bluetooth Basico;md5a45446df2c3bc3937a776e0f411c65c8.MainActivity
-Bluetooth_Basico.MainActivity, Bluetooth Basico, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5a45446df2c3bc3937a776e0f411c65c8.MainActivity
-Bluetooth_Basico.MainActivity;md5a45446df2c3bc3937a776e0f411c65c8.MainActivity
-bluetooth_basico.MainActivity;md5a45446df2c3bc3937a776e0f411c65c8.MainActivity
